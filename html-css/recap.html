@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- encodage -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- title -->
+		<title>Mon site ultra complexe</title>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+		<!-- font file from google api -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico" />
+		<!-- <script src="main.js"></script> -->
+	</head>
+	<body>
+		<h1>RECAP</h1>
+
+		<!-- Basic tags -->
+		<h2>Balises de base HTML</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Balise</th>
+					<th>Utilisation</th>
+					<th>Exemple</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>a</td>
+					<td><pre>&lt;a href="url"&gt;[CONTENT]&lt;/a&gt;</pre></td>
+					<td><a href="https://google.com/" target="_blank" title="google.com">LINK</a></td>
+				</tr>
+				<tr>
+					<td>h1</td>
+					<td><pre>&lt;h1&gt;Title 1&lt;/h1&gt;</pre></td>
+					<td><h1>Title 1</h1></td>
+				</tr>
+					<tr>
+					<td>img</td>
+					<td><pre>&lt;img src="url" alt="alternative text" title="a title" /&gt;</pre></td>
+					<td><img src="https://appstickers-cdn.appadvice.com/1156908976/818998452/3eb376b8845be7080e8ef595325e6f22-0.gif" class="thumbnail" alt="alternative text" title="a title" /></td>
+				</tr>
+				<tr>
+					<td>ul</td>
+					<td><pre>
+unordered list
+&lt;ul&gt; 
+	&lt;li&gt;item 1&lt;/li&gt;
+	&lt;li&gt;item 2&lt;/li&gt;
+&lt;/ul&gt;
+					</pre></td>
+					
+					<td>
+							unordered list
+							<ul>
+							<li>item 1</li>
+							<li>item 2</li>
+						</ul>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td></td>
+					<td>&lt;a href="url"&gt;[CONTENT]&lt;a&gt;</td>
+					<td></td>
+				</tr> -->
+				<tr>
+					<td>table</td>
+					<td><pre>
+&lt;table&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Title1&lt;/th&gt;
+			&lt;th&gt;Title2&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row-1-cell1&lt;/td&gt;
+			&lt;td&gt;row-1-cell2&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row-2-cell3&lt;/td&gt;
+			&lt;td&gt;row-2-cell4&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;row-3-cell5&lt;/td&gt;
+			&lt;td&gt;row-3-cell6&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+					</pre></td>
+					<td>
+						<table>
+							<thead>
+								<tr>
+									<th>Title1</th>
+									<th>Title2</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>row-1-cell1</td>
+									<td>row-1-cell2</td>
+								</tr>
+								<tr>
+									<td>row-2-cell3</td>
+									<td>row-2-cell4</td>
+								</tr>
+								<tr>
+									<td>row-3-cell5</td>
+									<td>row-3-cell6</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<br />
+		<hr />
+		<br />
+
+		<!-- Basic tags -->
+		<h2>Méthodes CSS</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Balise</th>
+					<th>Utilisation</th>
+					<th>Exemple</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<ul>
+							<li>color: couleur du h1</li>
+							<li>font-size: taille du h1</li>
+							<li>font-family: police</li>
+							<li>text-align: alignement du texte</li>
+							<li>text-weight: épaisseur</li>
+						</ul>
+						
+						
+					</td>
+					<td><pre>
+h1#th1 {
+	color: black;
+	font-size: large;
+	font-family: Pacifico, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	font-weight: bold;
+}
+					</pre></td>
+					<td>
+						<h1 id="th1">Title 1</h1>
+					</td>
+				</tr>
+				<tr>
+					<td>modifier certains enfants</td>
+					<td><pre>
+li:nth-child(even) {
+	/* paire, et impaire */
+	background-color: #a76a86;
+}
+					</pre></td>
+					<td><ul>
+						<li>item 1</li>
+						<li>item 2</li>
+						<li>item 3</li>
+					</ul></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" class="center"><a href="mailto:test@gmail.com" title="redirect mail">Pour plus d'info, envoyez un message.</a></td>
+
+				</tr>
+			</tfoot>
+		</table>
+
+	</body>
+</html>
