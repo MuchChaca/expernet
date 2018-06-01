@@ -1,0 +1,147 @@
+body {
+	font-family: 'Comic Sans MS';
+	overflow-y: auto;
+}
+
+#baniere {
+	width: 100%;
+	margin-top: -180px;
+	/* overflow-y: hidden; */
+}
+
+.menu {
+	padding-left: 0;
+}
+
+.menu > a > li {
+	display: inline-block;
+	border: solid 1px #535c71;
+	border-radius: 8px;
+	padding: 6px;
+	text-decoration: none;
+	color: #535c71;
+	font-size: 1.7em;
+}
+
+.menu > a > li:hover {
+	background-color: #4a5368;
+	border-color: whitesmoke;
+	color: #e3e6ed;
+	font-weight: bold;
+	box-shadow: 3px 3px darkgray;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 50px;
+	/* height: 100%; */
+}
+
+/* article: */
+
+h2 {
+	text-shadow: 1px 2px 3px darkgray;
+}
+
+#ul-life li {
+	list-style-image: url("../img/tree.png");
+}
+
+.last_num_perso {
+	list-style-type: upper-roman;
+}
+
+.capFirst:first-letter {
+	font-weight: bolder;
+	font-size: 300%;
+	color: #4a5368;
+}
+
+footer {
+	background-color: #535c71;
+	color: whitesmoke;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	overflow-x: hidden;
+	margin-left: -8px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+footer a {
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+/* ----------------------  FORM  ---------------------- */
+
+form {
+	background-color: #535e79cc;
+	border-radius: 24px;
+	padding: 36px;
+	
+	width: 50%;
+	margin: 0 auto;
+}
+
+label {
+	font: bold 12pt 'Merienda Font', Verdana, sans-serif;
+	color: whitesmoke;
+	display: inline-block;
+	width: 25%;
+}
+
+.form-block {
+	margin: 12px;
+}
+
+.btn-form {
+	padding: 10px 12px;
+	border-radius: 8px;
+	margin: 10px 5px;
+}
+
+.btn-form:hover {
+	cursor: pointer;
+}
+
+input{
+	border: solid 1px #535e79cc;
+	border-radius: 4px;
+}
+
+input:valid {
+	border-color: #63ab7bcc
+}
+
+
+input:invalid {
+	border-color: rgba(60.1%, 29.3%, 29.3%, 0.8);
+}
+
+input:required {
+	background-color: #b15c8866;
+}
+
+
+
+/* ----------------------  TAB-CA  ---------------------- */
+/* .tableau-ca */
+
+table.tableau-ca {
+	border-collapse: collapse;
+	border: dashed 1px darkgray;
+	border-radius: 8px;
+}
+
+.tableau-ca td, .tableau-ca th {
+	border: solid 1px whitesmoke;
+}
+
+.tableau-ca th {
+	background-color: #535e79cc;
+}
+
+

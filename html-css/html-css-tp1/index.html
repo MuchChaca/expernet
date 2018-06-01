@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulaire</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!-- FORM -->
+	<form id="fm" name="form1" method="POST" action="#">
+		<div>
+			<h2>Etape <progress value="10" max="100"></progress></h2>
+		</div>
+		<!-- CLIENT -->
+		<fieldset>
+			<legend>Client</legend>
+			<!-- LNAME -->
+			<div class="inline">
+				<label for="fm-lname">Nom</label>
+				<input type="text" name="fm=lname" id="fm-lname" size="50" required>
+			</div>
+			<!-- //LNAME -->
+			<!-- FNAME -->
+			<div class="inline">
+				<label for="fm-fname">Prenom</label>
+				<input type="text" name="fm=fname" id="fm-fname" size="50" required>
+			</div>
+			<!-- //FNAME -->
+			<!-- ADDRESS -->
+			<div class="inline">
+				<label for="fm-address">Adresse</label>
+				<input type="text" name="fm=address" id="fm-address" size="50" required>
+			</div>
+			<!-- //ADDRESS -->
+			<!-- ZIP -->
+			<div class="inline">
+				<label for="fm-zip">Code postal</label>
+				<input pattern="\d{5}" type="text" name="fm-zip" id="fm-zip" size="25" maxlength="5" required>
+			</div>
+			<!-- //ZIP -->
+			<!-- CITY -->
+			<div class="inline">
+				<label for="fm-city">Ville</label>
+				<input id="fm-city" name="fm-city" list="suggestions" required>
+				<datalist id="suggestions">
+					<option value="Saint-Denis">
+					<option value="Le Port">
+					<option value="La Possession">
+					<option value="Sainte-Marie">
+					<option value="Sainte-Suzanne">
+				</datalist>
+			</div>
+			<!-- //CITY -->
+			<!-- COUNTRY -->
+			<div class="inline">
+				<label for="fm-country">Pays</label>
+				<select id="fm-country" name="fm-country">
+					<option value="re">Reunion</option>
+					<option value="fr">France</option>
+					<option value="ru">Russie</option>
+					<option value="usa">Etats-Unis</option>
+					<option value="bra">Bresil</option>
+				</select>
+			</div>
+			<!-- //COUNTRY -->
+		</fieldset>
+		<!-- //CLIENT -->
+
+		<!-- PRODUCT -->
+		<fieldset>
+			<legend>Produit</legend>
+			<!-- PROD-SELECT -->
+			<div class="inline">
+				<label for="fm-prod">Produit</label>
+				<select multiple name="fm-prod" id="fm-prod" >
+					<option value="tshirt-h">T-Shirt Homme</option>
+					<option value="debardeur-h">Debardeur Homme</option>
+					<option value="tshirt-f">T-Shirt Femme</option>
+					<option value="debardeur-f">Debardeur Femme</option>
+				</select>
+			</div>
+			<!-- //PROD-SELECT -->
+			<!-- COLOR -->
+			<div class="inline">
+				<label for="fm-color">Couleur</label>
+				<input type="color" name="fm-color" id="fm-color" required />
+			</div>
+			<!-- //COLOR -->
+			<!-- SIZE -->
+			<div class="inline">
+				<label for="fm-size">Taille</label>
+				<input type="range" name="fm-size" id="fm-size" min="36" max="48" step="2" required />
+				<p>Taille choisie: <span id="fm-size-disp"></span></p>
+			</div>
+			<!-- //SIZE -->
+			<!-- SIZE-DETAIL -->
+			<div class="inline">
+					<details id="fm-size-detail">
+						<summary>Guide de correspondance des tailles</summary>
+						<table class="small-table">
+							<caption>Tailles standard</caption>
+							<thead>
+								<tr>
+									<th colspan="2">Hommes</th>
+									<th colspan="2">Femmes</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>36</td>
+									<td>S</td>
+									<td>36</td>
+									<td>S</td>
+								</tr>
+								<tr>
+									<td>38</td>
+									<td>M</td>
+									<td>38</td>
+									<td>M</td>
+								</tr>
+							</tbody>
+						</table>
+					</details>
+				</div>
+				<!-- //SIZE-DETAIL -->
+				<!-- QUANTITY -->
+				<div class="inline">
+					<label for="fm-quant">Quantite</label>
+					<input type="number" id="fm-quant" name="fm-quant" min="1" required value="1" />
+				</div>
+				<!-- //QUANTITY -->
+		</fieldset>
+		<!-- //PRODUCT -->
+
+		<!-- SUBMIT -->
+		<div class="inline">
+			<button type="reset">Reinitialiser</button>
+			<button type="submit">Valider</button>
+		</div>
+		<!-- //SUBMIT -->
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Carousel</title>
+
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" >
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+</head>
+<body>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- MENU -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="index.html">Home </a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="table.html">Tableaux</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="form.html">Formulaires</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="carousel.html">Carousel</a>
+				</li>
+			</ul>
+			
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<!-- //MENU -->
+
+	<!-- PAGE -->
+<div class="container">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+		<ul class="carousel-indicators">
+		  <li data-target="#demo" data-slide-to="0" class="active"></li>
+		  <li data-target="#demo" data-slide-to="1"></li>
+		  <li data-target="#demo" data-slide-to="2"></li>
+		</ul>
+		<div class="carousel-inner">
+		  <div class="carousel-item">
+			 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6nnSUepKQHBEIN9j_TkPIVxGXc8ZQZ-hlFtuIirIf2zkDnRdxZw" alt="much internet" width="100%" height="500">
+		  </div>
+		  <div class="carousel-item active">
+			 <img src="http://wallup.net/wp-content/uploads/2015/12/280430-nature-landscape-minimalism-water-mist-long_exposure-blurred-reflection-horizon-house-hill.jpg" alt="Silence" width="100%" height="500">
+			 <div class="carousel-caption">
+				<h3>Rester silencieux</h3>
+				<p>Juste pour un peu de calme</p>
+			 </div>
+		  </div>
+		  <div class="carousel-item">
+			 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUjLoRxEdRgrKr37ikndyYmWGo848pHJG7WTTtr8GMYzJ-LrBBiA" alt="New York" width="100%" height="500" >
+			 <div class="carousel-caption">
+				<h3>Chill</h3>
+				<p>Chillingggggg</p>
+			 </div>
+		  </div>
+		</div>
+		<a class="carousel-control-prev" href="#demo" data-slide="prev">
+		  <span class="carousel-control-prev-icon"></span>
+		</a>
+		<a class="carousel-control-next" href="#demo" data-slide="next">
+		  <span class="carousel-control-next-icon"></span>
+		</a>
+	 </div>
+</div>
+	 <!-- //PAGE -->
+
+</body>
+</html>

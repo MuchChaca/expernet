@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Inscription</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="css/styles_print.css" />
+	<!-- <script src="main.js"></script> -->
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header class="noprint">
+		<img id="baniere" src="img/baniere1.jpg" alt="banniere ici" />
+	</header>
+	
+	<!-- MENU -->
+	<nav>
+		<ul class="menu" >
+			<a href="index.html"><li>Accueil</li></a>
+			<a href="inscription.html"><li>Inscription</li></a>
+			<a href="tableau-ca.html"><li>Tableau CA</li></a>
+		</ul>
+	</nav>
+
+	<!-- SUBSCRIPTION-FROM -->
+	<!-- Send data by mail -->
+	<form method="POST" action="mailto:john361@gmail.com" name="form_sub" enctype="text/plain" >
+		<!-- LAST-NAME -->
+		<div class="form-block">
+			<label for="sub-lname">Nom</label>
+			<input type="text" name="sub-lname" id="sub-lname" size="30" maxlength="50" />
+		</div>
+		<!-- //LAST-NAME -->
+		<!-- FIRST-NAME -->
+		<div class="form-block">
+			<label for="sub-fname">Prenom</label>
+			<input type="text" name="sub-fname" id="sub-fname" size="30" maxlength="50" />
+		</div>
+		<!-- //FIRST-NAME -->
+		<!-- COMMENTS -->
+		<div class="form-block">
+			<label for="sub-comm">Commentaire</label>
+			<textarea type="text" name="sub-comm" id="sub-comm" row="3" placeholder="" ></textarea>
+		</div>
+		<!-- //COMMENTS -->
+		<!-- SEXE -->
+		<div class="form-block">
+			<fieldset>
+				<legend>Sexe</legend>
+				<div class="form-block">
+					<input type="radio" name="sub-sex" value="M" id="sub-sex-m" />
+					<label for="sub-sex-m">Homme</label>
+				</div>
+				<div class="form-block">
+					<input type="radio" name="sub-sex" value="F" id="sub-sex-f" />
+					<label for="sub-sex-f">Femme</label>
+				</div>
+			</fieldset>
+		</div>
+		<!-- //SEXE -->
+		<!-- BIRTH-DATE -->
+		<div class="form-block">
+			<label for="sub-birth">Date de naissance</label>
+			<input type="date" id="sub-birth" name="sub-birth" />
+		</div>
+		<!-- //BIRTH-DATE -->
+		<!-- CITY -->
+		<div class="form-block">
+			<label for="sub-city">Ville</label>
+			<select name="sub-city" id="sub-city">
+				<option value="possession">La Possession</option>
+				<option value="port">Le port</option>
+				<option value="denis">Saint Denis</option>
+				<option value="marie">Saint Marie</option>
+			</select>
+		</div>
+		<!-- //CITY -->
+		<!-- NEWS -->
+		<div class="form-block">
+			<input type="checkbox" name="sub-news" id="sub-news" checked />
+			<label for="sub-news">J'accepte de recevoir la newsletter</label>
+		</div>
+		<!-- //NEWS -->
+		<!-- FREQ -->
+		<div class="form-block">
+			<label for="sub-freq">Frequence de reception</label>
+			<input type="number" id="sub-freq" name="sub=freq" min="1" max="10" value="1" /> fois par mois
+		</div>
+		<!-- //FREQ -->
+		<!-- PASSWORD -->
+		<div class="form-block">
+			<label for="sub-pass">Mot de passe</label>
+			<input type="password" name="sub-pass" id="sub-pass" required />
+		</div>
+		<!-- //PASSWORD -->
+		<!-- EMAIL -->
+		<div class="form-block">
+			<label for="sub-mail">Adresse mail</label>
+			<input type="email" name="sub-mail" id="sub-mail" size="50" />
+		</div>
+		<!-- //EMAIL -->
+		<!-- WEBSITE -->
+		<div class="form-block">
+			<label for="sub-url">Site web</label>
+			<input type="url" id="sub-url" name="url" size="50" />
+		</div>
+		<!-- //WEBSITE -->
+		<!-- SATISFIED -->
+		<div class="form-block">
+			<label for="sub-satis">Satisfaction</label>
+			<input type="range" id="sub-satis" name="sub-satis" step="1" min="0" max="5" value="5" />
+		</div>
+		<!-- //SATISFIED -->
+		<!-- SUBMIT -->
+		<div class="form-block">
+			<button class="btn-form" type="reset" id="sub-reset">Reinitialiser</button>
+			<input class="btn-form" type="submit" name="sub-submit" id="sub-submit" value="Envoyer" />
+		</div>
+		<!-- //SUBMIT -->
+
+
+	</form>
+	<!-- //SUBSCRIPTION-FROM -->
+</body>
+</html>

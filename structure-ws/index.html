@@ -1,23 +1,24 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Structure</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="css/styles_print.css" />
 	<!-- <script src="main.js"></script> -->
 </head>
 <body>
 
 	<!-- HEADER -->
-	<header>
-		<img src="img/baniere1.jpg" alt="banniere ici" />
+	<header class="noprint">
+		<img id="baniere" src="img/baniere1.jpg" alt="banniere ici" />
 	</header>
 
 	<!-- MENU -->
 	<nav>
-		<ul>
+		<ul class="menu" >
 			<a href="index.html"><li>Accueil</li></a>
 			<a href="inscription.html"><li>Inscription</li></a>
 			<a href="tableau-ca.html"><li>Tableau CA</li></a>
@@ -27,26 +28,52 @@
 	<section>
 		<article>
 			<h2>Life</h2>
-			<ul>
+			<ul id="ul-life">
 				<li>Start</li>
 				<li>Begin</li>
 				<li>End</li>
 			</ul>
+			<p class="capFirst">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam earum molestias tempore, dolorum sunt consequatur, modi magni enim libero nihil molestiae voluptate amet laudantium, sequi veritatis! Voluptatum eveniet animi atque!
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, corrupti libero deserunt tenetur minima beatae aliquam obcaecati quisquam? Voluptatem qui optio modi natus in pariatur quaerat fugit deleniti ex beatae!
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat eos commodi nulla voluptatem ad, temporibus quo cupiditate aliquam minima ducimus et molestiae doloribus pariatur vero, officiis reiciendis iste libero totam?
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, corrupti libero deserunt tenetur minima beatae aliquam obcaecati quisquam? Voluptatem qui optio modi natus in pariatur quaerat fugit deleniti ex beatae!
+			</p>
 		</article>
 		<article>
 			<h2>Banzai</h2>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<ol class="last_num_perso" >
+				<li>Roots</li>
+				<li>Trunc</li>
+				<li>Leaves</li>
+			</ol>
+			<p class="capFirst">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, est tenetur distinctio, alias debitis ab eius suscipit ut libero quibusdam impedit quisquam repudiandae nihil harum totam quo rerum voluptatem provident.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt expedita, maxime aliquam veniam dolorem qui necessitatibus quibusdam illo optio sed quia eaque reprehenderit quaerat, quos obcaecati assumenda enim ipsa!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quasi fugit quam cupiditate, odit nisi suscipit vel accusantium voluptatem assumenda perspiciatis quod numquam consectetur. Dolores nulla fuga quos possimus vel.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, commodi nemo. Aperiam maiores veritatis nam nihil porro, accusamus similique minus, quam quibusdam iure, qui laborum non fuga. Optio, exercitationem quibusdam?
+			</p>
 		</article>
+		
+		<aside>
+			<details>
+				<summary>Random quote</summary>
+				<p>It is not about the destination, but about the path we take to get there.</p>
+			</details>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwdL3_HdG7g0nTMRYPHBci6x2Qchw7g0_LWJB6h_o60hDbsjNm" alt="random image" />
+		</aside>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 	</section>
 
-	<aside>
-		at the side
-	</aside>
-
+	<!-- FOOTER -->
+	<footer class="noprint">
+		<a href="mentions.html">Mentions legales</a>
+	</footer>
 	
 </body>
 </html>

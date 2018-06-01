@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+/* The animation code */
+@keyframes color-shift {
+	0% {background: linear-gradient(-70deg, #adad4be6, #000000e6)}
+	10% {background: linear-gradient(-50deg, #adad4be6, #000000e6)}
+	20% {background: linear-gradient(-40deg, #adad4be6, #000000e6)}
+	30% {background: linear-gradient(-30deg, #adad4be6, #000000e6)}
+	40% {background: linear-gradient(-20deg, #adad4be6, #000000e6)}
+	50% {background: linear-gradient(-10deg, #adad4be6, #000000e6)}
+	60% {background: linear-gradient(-20deg, #adad4be6, #000000e6)}
+	70% {background: linear-gradient(-30deg, #adad4be6, #000000e6)}
+	80% {background: linear-gradient(-40deg, #adad4be6, #000000e6)}
+	90% {background: linear-gradient(-50deg, #adad4be6, #000000e6)}
+	100% {background: linear-gradient(-70deg, #adad4be6, #000000e6)}
+}
+
+body {
+	color: whitesmoke;
+	font-family: 'Oxygen', sans-serif;
+}
+
+#fm {
+	width: 30%;
+	margin: 60px auto;
+	border: solid 1px #9a9a45e6;
+	border-radius: 24px;
+	padding: 30px;
+	background: linear-gradient(-70deg, #adad4be6, #000000e6);
+
+	/* what to put a transition on */
+	transition-property: background-color;
+	transition-duration: 4s;
+	transition-delay: 0;
+}
+
+#fm:hover {
+	background: linear-gradient(-70deg, #adad4be6, #000000e6);
+	animation-name: color-shift;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+input {
+	border: solid 1px #fff6;
+	border-radius: 4px;
+}
+
+input:invalid {
+	border-color: #b6333366;
+}
+
+input:valid {
+	border-color: #33b63466;
+}
+
+.inline {
+	margin: 15px auto;
+}
+
+fieldset {
+	margin: 0 auto;
+	border-radius: 8px;
+	margin-top: 10px;
+}
+
+legend {
+	font-size: 16pt;
+	border: solid 1px whitesmoke;
+	border-radius: 6px;
+	padding: 6px;
+	font-weight: bolder;
+}
+
+label {
+	display: inline-block;
+	width: 200px;
+	color: whitesmoke;
+	font-weight: bolder;
+}
+
+details:hover {
+	cursor: help;
+}
+
+.inline > p {
+	display: inline;
+	margin-left: 15px;
+	border: solid 1px whitesmoke;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+
+.small-table {
+	border-collapse: collapse;
+	margin: 15px auto;
+	text-align: center;
+	border: dashed 2px whitesmoke!important;
+	border-radius: 8px;
+	width: 70%;
+}
+
+.small-table td, .small-table th {
+	border: solid 1px whitesmoke;
+	padding: 8px;
+}
+
+.small-table th {
+	font-weight: bold;
+	color: #5d5d09e6;
+	background-color: #dfdfdfe6;
+	border-color: #5d5d09e6;
+}
+
+progress {
+	/* background: green; */
+	color: #5d5d09e6;
+}
+
+button {
+	font-size: 15pt;
+	border: solid 1px whitesmoke;
+	border-radius: 8px;
+	padding: 7px;
+	width: 48%;
+	right: 0;
+	left: 0;
+	margin: 0px auto;
+	background-color: #470c0c00;
+	color: whitesmoke;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #e9e8cf77;
+	color: #6b6b25e6;
+}
+
+select {
+	border-radius: 4px;
+}
+
+option:hover {
+	background-color: #6b6b25e6;
+	color: whitesmoke;
+} 
+
+option:checked {
+	background-color: #4b4b0e85;
+	color: whitesmoke;
+	font-weight: 600;
+} 

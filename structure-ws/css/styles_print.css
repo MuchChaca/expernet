@@ -1,0 +1,14 @@
+@media print {
+	body {
+		background-color: white;
+		background-image: none;
+
+		color: black;
+		font-size: 12pt;
+	}
+
+	/* Elems to not print */
+	.noprint {
+		display: none;
+	}
+}

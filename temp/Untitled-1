@@ -1,0 +1,11 @@
+code postal: seulement 5 chiffres
+ville: champ texte avec suggestion
+pays: liste deroulante
+2 fieldsets: client/produit
+produit liste avec plusieurs choix
+select color
+taille: range
+guide correspondence, detailes summaray to table
+quantite int
+
+valid
