@@ -18,14 +18,10 @@ var txt = 'Browser:' + navigator.appCodeName + ' - ' + navigator.appVersion;
 document.getElementById('browser-info').innerHTML = txt;
 
 
-function doHistoPrev(e){
-	// window.history.back();
-	window.history.go(-3);
-}
-function doHistoNext(e){
-	window.history.forward();
-	
-}
+
+doHistoPrev(e => window.history.go(-3));
+
+doHistoNext(e => window.history.forward());
 
 txt = 'Screen:' + window.screen.width + 'x' + window.screen.height;
 document.getElementById('screen-info').innerHTML = txt;

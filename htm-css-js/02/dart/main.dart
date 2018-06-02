@@ -15,16 +15,19 @@ void main() {
   querySelector('#screen-info').innerHtml = txtScreen;
 
   // New window
-  querySelector('#click1').onClick.listen((e) => newWindow());
+  WindowBase opened; 
+  querySelector('#click1').onClick.listen((e) => opened = newWindow());
   // Page prev (3rd)
   querySelector('#histo-prev').onClick.listen((e) => doPagePrev());
   // Page next (1st)
   querySelector('#histo-next').onClick.listen((e) => doPageNext());
+
+
+  // close new window
+  querySelector('#click2').onClick.listen((e) => closeWindow(opened));
 }
 
-void newWindow() {
-  window.open("infos.html", "String target,");
-}
+WindowBase newWindow() => window.open("infos.html", "String target,", "_blank");
 
 
 void doPagePrev () {
@@ -34,6 +37,8 @@ void doPagePrev () {
 void doPageNext () {
   window.history.forward();
 }
+
+closeWindow(WindowBase wb) => wb.close();
 
 
 

@@ -1,0 +1,56 @@
+.cl-1 {
+	color: blue;
+}
+
+.cl-2 {
+	color: blueviolet;
+}
+
+.cl-3 {
+	color: magenta;
+}
+
+.cl-4 {
+	color: chocolate;
+}
+
+.cl-5 {
+	color: cadetblue;
+}
+
+.cl-6 {
+	color: cornsilk;
+}
+
+.cl-7 {
+	color: darkkhaki;
+}
+
+.cl-8 {
+	color: darkorange;
+}
+
+.cl-9 {
+	color: darkslategrey;
+}
+
+.cl-10 {
+	color: dimgray;
+}
+
+.cl-11 {
+	color: forestgreen;
+}
+
+
+.non-valid {
+	background-color: #e27c7de6!important;
+	/* border: solid 1px #e27c7de6!important; */
+}
+
+.valid {
+	background-color: #7cfd87e6!important;
+	/* border: solid 1px #7cfd87e6!important; */
+	
+	
+}

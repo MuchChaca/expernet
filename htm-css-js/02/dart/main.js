@@ -1238,13 +1238,13 @@
       return new H._Deserializer(true, []).deserialize$1(new H._Serializer(false, P._LinkedIdentityHashMap__LinkedIdentityHashMap$es6(null, P.int)).serialize$1(message));
     },
     startRootIsolate_closure: {
-      "^": "Closure:0;_box_0,entry",
+      "^": "Closure:1;_box_0,entry",
       call$0: function() {
         this.entry.call$1(this._box_0.args);
       }
     },
     startRootIsolate_closure0: {
-      "^": "Closure:0;_box_0,entry",
+      "^": "Closure:1;_box_0,entry",
       call$0: function() {
         this.entry.call$2(this._box_0.args, null);
       }
@@ -1557,7 +1557,7 @@
       "^": "Object;"
     },
     IsolateNatives__processWorkerMessage_closure: {
-      "^": "Closure:0;entryPoint,args,message,isSpawnUri,startPaused,replyTo",
+      "^": "Closure:1;entryPoint,args,message,isSpawnUri,startPaused,replyTo",
       call$0: function() {
         H.IsolateNatives__startIsolate(this.entryPoint, this.args, this.message, this.isSpawnUri, this.startPaused, this.replyTo);
       }
@@ -1643,7 +1643,7 @@
       }
     },
     _NativeJsSendPort_send_closure: {
-      "^": "Closure:0;$this,msg",
+      "^": "Closure:1;$this,msg",
       call$0: function() {
         var t1 = this.$this._receivePort;
         if (!t1.get$_isClosed())
@@ -1814,7 +1814,7 @@
         if (!(x instanceof P.Object))
           this.unsupported$1(x);
         return ["dart", init.classIdExtractor(x), this.serializeArrayInPlace$1(init.classFieldsExtractor(x))];
-      }, "call$1", "get$serialize", 2, 0, 1],
+      }, "call$1", "get$serialize", 2, 0, 0],
       unsupported$2: function(x, message) {
         throw H.wrapException(new P.UnsupportedError((message == null ? "Can't transmit:" : message) + " " + H.S(x)));
       },
@@ -1971,7 +1971,7 @@
           default:
             throw H.wrapException("couldn't deserialize: " + H.S(x));
         }
-      }, "call$1", "get$deserialize", 2, 0, 1],
+      }, "call$1", "get$deserialize", 2, 0, 0],
       deserializeArrayInPlace$1: function(x) {
         var t1, i, t2;
         t1 = J.getInterceptor$asx(x);
@@ -3115,7 +3115,7 @@
       }
     },
     unwrapException_saveStackTrace: {
-      "^": "Closure:1;ex",
+      "^": "Closure:0;ex",
       call$1: function(error) {
         if (!!J.getInterceptor(error).$isError)
           if (error.$thrownJsError == null)
@@ -3138,31 +3138,31 @@
       }
     },
     invokeClosure_closure: {
-      "^": "Closure:0;closure",
+      "^": "Closure:1;closure",
       call$0: function() {
         return this.closure.call$0();
       }
     },
     invokeClosure_closure0: {
-      "^": "Closure:0;closure,arg1",
+      "^": "Closure:1;closure,arg1",
       call$0: function() {
         return this.closure.call$1(this.arg1);
       }
     },
     invokeClosure_closure1: {
-      "^": "Closure:0;closure,arg1,arg2",
+      "^": "Closure:1;closure,arg1,arg2",
       call$0: function() {
         return this.closure.call$2(this.arg1, this.arg2);
       }
     },
     invokeClosure_closure2: {
-      "^": "Closure:0;closure,arg1,arg2,arg3",
+      "^": "Closure:1;closure,arg1,arg2,arg3",
       call$0: function() {
         return this.closure.call$3(this.arg1, this.arg2, this.arg3);
       }
     },
     invokeClosure_closure3: {
-      "^": "Closure:0;closure,arg1,arg2,arg3,arg4",
+      "^": "Closure:1;closure,arg1,arg2,arg3,arg4",
       call$0: function() {
         return this.closure.call$4(this.arg1, this.arg2, this.arg3, this.arg4);
       }
@@ -3480,7 +3480,7 @@
       $isInternalMap: 1
     },
     JsLinkedHashMap_values_closure: {
-      "^": "Closure:1;$this",
+      "^": "Closure:0;$this",
       call$1: function(each) {
         return this.$this.$index(0, each);
       }
@@ -3524,7 +3524,7 @@
       }
     },
     initHooks_closure: {
-      "^": "Closure:1;getTag",
+      "^": "Closure:0;getTag",
       call$1: function(o) {
         return this.getTag(o);
       }
@@ -3990,7 +3990,7 @@
       P._scheduleAsyncCallback(f);
     },
     _AsyncRun__initializeScheduleImmediate_internalCallback: {
-      "^": "Closure:1;_box_0",
+      "^": "Closure:0;_box_0",
       call$1: function(_) {
         var t1, f;
         --init.globalState.topEventLoop._activeJsAsyncCount;
@@ -4012,14 +4012,14 @@
       }
     },
     _AsyncRun__scheduleImmediateJsOverride_internalCallback: {
-      "^": "Closure:0;callback",
+      "^": "Closure:1;callback",
       call$0: function() {
         --init.globalState.topEventLoop._activeJsAsyncCount;
         this.callback.call$0();
       }
     },
     _AsyncRun__scheduleImmediateWithSetImmediate_internalCallback: {
-      "^": "Closure:0;callback",
+      "^": "Closure:1;callback",
       call$0: function() {
         --init.globalState.topEventLoop._activeJsAsyncCount;
         this.callback.call$0();
@@ -4314,19 +4314,19 @@
       }
     },
     _Future__addListener_closure: {
-      "^": "Closure:0;$this,listener",
+      "^": "Closure:1;$this,listener",
       call$0: function() {
         P._Future__propagateToListeners(this.$this, this.listener);
       }
     },
     _Future__prependListeners_closure: {
-      "^": "Closure:0;_box_0,$this",
+      "^": "Closure:1;_box_0,$this",
       call$0: function() {
         P._Future__propagateToListeners(this.$this, this._box_0.listeners);
       }
     },
     _Future__chainForeignFuture_closure: {
-      "^": "Closure:1;target",
+      "^": "Closure:0;target",
       call$1: function(value) {
         var t1 = this.target;
         t1._state = 0;
@@ -4343,7 +4343,7 @@
       }
     },
     _Future__chainForeignFuture_closure1: {
-      "^": "Closure:0;target,e,s",
+      "^": "Closure:1;target,e,s",
       call$0: function() {
         this.target._completeError$2(this.e, this.s);
       }
@@ -4390,7 +4390,7 @@
       }
     },
     _Future__propagateToListeners_handleWhenCompleteCallback_closure: {
-      "^": "Closure:1;originalSource",
+      "^": "Closure:0;originalSource",
       call$1: function(_) {
         return this.originalSource;
       }
@@ -4463,13 +4463,13 @@
       }
     },
     Stream_length_closure: {
-      "^": "Closure:1;_box_0",
+      "^": "Closure:0;_box_0",
       call$1: function(_) {
         ++this._box_0.count;
       }
     },
     Stream_length_closure0: {
-      "^": "Closure:0;_box_0,future",
+      "^": "Closure:1;_box_0,future",
       call$0: function() {
         this.future._complete$1(this._box_0.count);
       }
@@ -4486,7 +4486,7 @@
       }
     },
     Stream_toList_closure0: {
-      "^": "Closure:0;result,future",
+      "^": "Closure:1;result,future",
       call$0: function() {
         this.future._complete$1(this.result);
       }
@@ -4773,7 +4773,7 @@
       }
     },
     _PendingEvents_schedule_closure: {
-      "^": "Closure:0;$this,dispatch",
+      "^": "Closure:1;$this,dispatch",
       call$0: function() {
         var t1, oldState, $event, t2;
         t1 = this.$this;
@@ -4916,7 +4916,7 @@
       "^": "Object;"
     },
     _rootHandleUncaughtError_closure: {
-      "^": "Closure:0;_box_0,stackTrace",
+      "^": "Closure:1;_box_0,stackTrace",
       call$0: function() {
         var t1, t2, error;
         t1 = this._box_0;
@@ -5014,19 +5014,19 @@
       }
     },
     _RootZone_bindCallback_closure: {
-      "^": "Closure:0;$this,f",
+      "^": "Closure:1;$this,f",
       call$0: function() {
         return this.$this.runGuarded$1(this.f);
       }
     },
     _RootZone_bindCallback_closure0: {
-      "^": "Closure:0;$this,f",
+      "^": "Closure:1;$this,f",
       call$0: function() {
         return this.$this.run$1(this.f);
       }
     },
     _RootZone_bindUnaryCallback_closure: {
-      "^": "Closure:1;$this,f",
+      "^": "Closure:0;$this,f",
       call$1: function(arg) {
         return this.$this.runUnaryGuarded$2(this.f, arg);
       }
@@ -6208,7 +6208,7 @@
       "%": ";Element"
     },
     closure: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$1: function(e) {
         return !!J.getInterceptor(e).$isElement;
       }
@@ -6531,11 +6531,11 @@
     Window: {
       "^": "EventTarget;",
       open$3: function(receiver, url, $name, options) {
-        var t1 = W._DOMWindowCrossFrame__createSafe(receiver.open(url, $name));
+        var t1 = W._DOMWindowCrossFrame__createSafe(receiver.open(url, $name, options));
         return t1;
       },
-      open$2: function($receiver, url, $name) {
-        return this.open$3($receiver, url, $name, null);
+      close$0: function(receiver) {
+        return receiver.close();
       },
       $isInterceptor: 1,
       "%": "DOMWindow|Window"
@@ -6713,7 +6713,7 @@
       }
     },
     _EventStreamSubscription_closure: {
-      "^": "Closure:1;onData",
+      "^": "Closure:0;onData",
       call$1: function(e) {
         return this.onData.call$1(e);
       }
@@ -6810,13 +6810,13 @@
       }
     },
     NodeValidatorBuilder_allowsElement_closure: {
-      "^": "Closure:1;element",
+      "^": "Closure:0;element",
       call$1: function(v) {
         return v.allowsElement$1(this.element);
       }
     },
     NodeValidatorBuilder_allowsAttribute_closure: {
-      "^": "Closure:1;element,attributeName,value",
+      "^": "Closure:0;element,attributeName,value",
       call$1: function(v) {
         return v.allowsAttribute$3(this.element, this.attributeName, this.value);
       }
@@ -6859,13 +6859,13 @@
       }
     },
     _SimpleNodeValidator_closure: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$1: function(x) {
         return !C.JSArray_methods.contains$1(C.List_yrN, x);
       }
     },
     _SimpleNodeValidator_closure0: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$1: function(x) {
         return C.JSArray_methods.contains$1(C.List_yrN, x);
       }
@@ -6891,7 +6891,7 @@
       }
     },
     _TemplatingNodeValidator_closure: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$1: function(attr) {
         return "TEMPLATE::" + H.S(attr);
       }
@@ -6936,6 +6936,9 @@
     },
     _DOMWindowCrossFrame: {
       "^": "Object;_window",
+      close$0: function(_) {
+        return this._window.close();
+      },
       $isInterceptor: 1,
       static: {
         _DOMWindowCrossFrame__createSafe: function(w) {
@@ -7322,28 +7325,33 @@
   }], ["", "main.dart",, F, {
     "^": "",
     main: [function() {
-      var txtBrow, t1, txtScreen, t2;
+      var t1, txtBrow, t2, txtScreen, t3;
+      t1 = {};
       txtBrow = C.JSString_methods.$add(C.JSString_methods.$add("Browser info: ", window.navigator.appCodeName) + " - ", window.navigator.appVersion);
-      t1 = document;
-      J.set$innerHtml$x(t1.querySelector("#browser-info"), txtBrow);
+      t2 = document;
+      J.set$innerHtml$x(t2.querySelector("#browser-info"), txtBrow);
       txtScreen = "Screen info: " + J.toString$0$(window.screen.width) + "x" + J.toString$0$(window.screen.height);
-      J.set$innerHtml$x(t1.querySelector("#screen-info"), txtScreen);
-      t2 = J.get$onClick$x(t1.querySelector("#click1"));
-      W._EventStreamSubscription$(t2._html$_target, t2._eventType, new F.main_closure(), false, H.getTypeArgumentByIndex(t2, 0));
-      t2 = J.get$onClick$x(t1.querySelector("#histo-prev"));
-      W._EventStreamSubscription$(t2._html$_target, t2._eventType, new F.main_closure0(), false, H.getTypeArgumentByIndex(t2, 0));
-      t1 = J.get$onClick$x(t1.querySelector("#histo-next"));
-      W._EventStreamSubscription$(t1._html$_target, t1._eventType, new F.main_closure1(), false, H.getTypeArgumentByIndex(t1, 0));
+      J.set$innerHtml$x(t2.querySelector("#screen-info"), txtScreen);
+      t1.opened = null;
+      t3 = J.get$onClick$x(t2.querySelector("#click1"));
+      W._EventStreamSubscription$(t3._html$_target, t3._eventType, new F.main_closure(t1), false, H.getTypeArgumentByIndex(t3, 0));
+      t3 = J.get$onClick$x(t2.querySelector("#histo-prev"));
+      W._EventStreamSubscription$(t3._html$_target, t3._eventType, new F.main_closure0(), false, H.getTypeArgumentByIndex(t3, 0));
+      t3 = J.get$onClick$x(t2.querySelector("#histo-next"));
+      W._EventStreamSubscription$(t3._html$_target, t3._eventType, new F.main_closure1(), false, H.getTypeArgumentByIndex(t3, 0));
+      t2 = J.get$onClick$x(t2.querySelector("#click2"));
+      W._EventStreamSubscription$(t2._html$_target, t2._eventType, new F.main_closure2(t1), false, H.getTypeArgumentByIndex(t2, 0));
     }, "call$0", "main__main$closure", 0, 0, 2],
     main_closure: {
-      "^": "Closure:1;",
+      "^": "Closure:0;_box_0",
       call$1: function(e) {
-        C.Window_methods.open$2(window, "infos.html", "String target,");
-        return;
+        var opened = C.Window_methods.open$3(window, "infos.html", "String target,", "_blank");
+        this._box_0.opened = opened;
+        return opened;
       }
     },
     main_closure0: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$1: function(e) {
         window.history.back();
         window.history.go(-3);
@@ -7351,10 +7359,16 @@
       }
     },
     main_closure1: {
-      "^": "Closure:1;",
+      "^": "Closure:0;",
       call$1: function(e) {
         window.history.forward();
         return;
+      }
+    },
+    main_closure2: {
+      "^": "Closure:0;_box_0",
+      call$1: function(e) {
+        return J.close$0$x(this._box_0.opened);
       }
     }
   }, 1]];
@@ -7509,6 +7523,9 @@
   };
   J._removeEventListener$3$x = function(receiver, a0, a1, a2) {
     return J.getInterceptor$x(receiver)._removeEventListener$3(receiver, a0, a1, a2);
+  };
+  J.close$0$x = function(receiver) {
+    return J.getInterceptor$x(receiver).close$0(receiver);
   };
   J.elementAt$1$ax = function(receiver, a0) {
     return J.getInterceptor$ax(receiver).elementAt$1(receiver, a0);
@@ -7814,7 +7831,7 @@
   Isolate = Isolate.$finishIsolateConstructor(Isolate);
   $ = new Isolate();
   init.metadata = [null];
-  init.types = [{func: 1}, {func: 1, args: [,]}, {func: 1, v: true}, {func: 1, v: true, args: [{func: 1, v: true}]}, {func: 1, ret: P.String, args: [P.int]}, {func: 1, ret: P.bool, args: [W.Element, P.String, P.String, W._Html5NodeValidator]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, args: [{func: 1, v: true}]}, {func: 1, v: true, args: [P.Object], opt: [P.StackTrace]}, {func: 1, args: [,], opt: [,]}, {func: 1, v: true, args: [, P.StackTrace]}, {func: 1, args: [,,]}, {func: 1, v: true, args: [W.Node, W.Node]}];
+  init.types = [{func: 1, args: [,]}, {func: 1}, {func: 1, v: true}, {func: 1, v: true, args: [{func: 1, v: true}]}, {func: 1, ret: P.String, args: [P.int]}, {func: 1, ret: P.bool, args: [W.Element, P.String, P.String, W._Html5NodeValidator]}, {func: 1, args: [, P.String]}, {func: 1, args: [P.String]}, {func: 1, args: [{func: 1, v: true}]}, {func: 1, v: true, args: [P.Object], opt: [P.StackTrace]}, {func: 1, args: [,], opt: [,]}, {func: 1, v: true, args: [, P.StackTrace]}, {func: 1, args: [,,]}, {func: 1, v: true, args: [W.Node, W.Node]}];
   function convertToFastObject(properties) {
     function MyClass() {
     }
